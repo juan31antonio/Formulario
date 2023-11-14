@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de registro - Laguna Tollon.</title>
 </head>
 <body>
-    <form>
+    <form method="get" action="">
         <label for="name">Nombre</label>
-        <input type="text" id="name" pattern="[A-Za-z]+"><br>
+        <input type="text" id="name" pattern="[A-Za-z]+" maxlength="50"><br>
         <br>
         <label for="subname">Primer apellido</label>
-        <input type="text" id="subname" pattern="[A-Za-z]+"><br>
+        <input type="text" id="subname" pattern="[A-Za-z]+" maxlength="50"><br>
         <br>
         <label for="subname2">Segundo Apellido</label>
-        <input type="text" id="subname2" pattern="[A-Za-z]+">
+        <input type="text" id="subname2" pattern="[A-Za-z]+" maxlength="50">
         <br>
         <br>
         <label for="sexo">Sexo:</label>
@@ -25,8 +25,12 @@
         <br>
         <br>
         <label for="email">Correo electrónico</label>
-        <input type="text" id="email" pattern="\@gmail\.com"><br>
+        <input type="email" id="email" pattern="[A-Za-z0-9]+\@gmail\.com" title="INAVLID TEXT"><br>
         <br>
+        <input type="checkbox" name="informacion" checked>Deseo recibir información sobre novedades y ofertas<br>
+        <input type="checkbox" name="condiciones">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos<br>
+        <br>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
