@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="verdura">Verdura a elegir:</label>
+        <select id="verdura">
+            <option value="pimiento">Pimiento</option>
+            <option value="tomate">Tomate</option>
+            <option value="zanahoria">Zanahoria</option>
+        </select>
+        <br>
+        <br>
+        <label for="cantidad">Cantidad (ud, gr o kg)</label>
+        <br>
+        <input type="text" name="cantidad" id="cantidad" pattern="[0-9]+\s?(ud|kg|gr)" placeholder="ud/kg/gr">
+        <input type="submit" value="Comprar">
+    </form>
+</body>
+</html>
